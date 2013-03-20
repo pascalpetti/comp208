@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<%= render 'layouts/header' %>
 
-<%= yield %>
+	<%= image_tag("background.jpg", :id => "background") %>
+
+<div class="container">
+		
+		<div class="center hero-unit">
+			<%= yield %>
+		</div>
+
+		<%= render 'layouts/footer' %>
+
+</div>
 
 </body>
 </html>

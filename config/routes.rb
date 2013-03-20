@@ -1,4 +1,10 @@
 Comp208::Application.routes.draw do
+  root :to => 'pages#home'
+  get 'home' => 'pages#home'
+  get 'bulletinboard' => 'pages#bulletinboard'
+  get 'location' => 'pages#location'
+  get 'contactus' => 'pages#contactus'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
