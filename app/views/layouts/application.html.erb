@@ -9,17 +9,17 @@
 <body>
 	<%= render 'layouts/header' %>
 
-	<%= image_tag("background.jpg", :id => "background") %>
+	<div class="container">
+			
+			<div class="center hero-unit", id ="alpha">
+				<%= yield %>
+			</div>
 
-<div class="container">
-		
-		<div class="center hero-unit">
-			<%= yield %>
-		</div>
+			<%= render 'layouts/footer' %>
 
-		<%= render 'layouts/footer' %>
+	</div>
 
-</div>
+
 
 </body>
 </html>
